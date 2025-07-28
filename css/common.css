@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url(../font/Cafe24Ssurround-v2.0.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "noto";
+  src: url(../font/NotoSans-VariableFont_wdth\wght.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "notoKR";
+  src: url(../font/NotoSansKR-VariableFont_wght.ttf) format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --main-color: #1d1d1f;
+  --font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%; /*10/16*100*/
+  /* font-size: clamp(14px, 1vw, 38px); */
+}
+
+body {
+  font-family: "Cafe24Ssurround", "Noto Sans KR", "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #1d1d1f;
+  background-color: #ff3b30;
+}

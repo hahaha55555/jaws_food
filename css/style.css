@@ -1,0 +1,382 @@
+.flex {
+  display: flex;
+}
+.wrap {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+}
+.title {
+  font-size: 4rem;
+  text-align: center;
+  background-color: #ffffff80;
+  width: 100%;
+  margin-top: 100px;
+}
+.str {
+  font-weight: bold;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.moreBtn a {
+  display: block;
+  width: 140px;
+  height: 44px;
+  margin: auto;
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 28px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  box-shadow: 2px 2px 4px #c0c0c0;
+  z-index: 1000;
+}
+.header {
+  height: 9.6rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.logo img {
+  width: 20rem;
+}
+.gnb {
+  font-size: 2rem;
+}
+.gnb > li a {
+  display: block;
+  padding: 0 2.4rem;
+}
+.submenu {
+  display: none;
+}
+/*main*/
+/*main_visual*/
+.main_visual {
+  padding-top: 9.6rem;
+  width: 100%;
+  background: #ffe16a;
+}
+.main_visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*menu*/
+/*menu*/
+.menu {
+  background: url(../image/menu_bg.png) 100% 100% / cover;
+  padding: 100px 0 30rem;
+}
+.menuOpction {
+  justify-content: end;
+  gap: 24px;
+  padding: 72px 0;
+}
+.menuOpction li {
+  position: relative;
+}
+.menuOpction li ~ li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.6rem;
+  width: 1px;
+  background: #c0c0c0;
+}
+.menuOpction li span {
+  cursor: pointer;
+}
+/*menuslide*/
+/*menuslide*/
+/*menuslide*/
+
+#menuSlide {
+  position: relative;
+  width: 100%;
+  height: 212px;
+  overflow: hidden;
+}
+.content.on {
+  display: flex;
+}
+.content {
+  display: none;
+}
+.main_menu,
+.set_menu,
+.side_menu {
+  position: absolute;
+  left: 100px;
+  gap: 17.8rem;
+  width: 99.2rem;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.main_menu li,
+.set_menu li,
+.side_menu li {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 212px;
+  height: 212px;
+  overflow: hidden;
+}
+
+.main_menu img,
+.side_menu img,
+.set_menu img {
+  width: 212px;
+  height: 212px;
+}
+.set_menu li:first-child img,
+.set_menu li:last-child img {
+  height: auto;
+  padding-top: 40px;
+}
+
+.prev img,
+.next img {
+  width: 50px;
+}
+.prev,
+.next {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.hide {
+  display: none;
+}
+/*menuslide*/
+/*info*/
+/*info*/
+.infoBox {
+  display: grid;
+  grid-template-areas:
+    "img info"
+    "img to";
+  gap: 4.8rem;
+  width: 992px;
+  margin: 48px auto 84px;
+  height: 516px;
+  background: #fff;
+  padding: 48px;
+  font-family: "notoKR";
+}
+.infoBox h3 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.menuImg {
+  grid-area: img;
+  width: 346px;
+  height: auto;
+  margin-top: 48px;
+}
+.info {
+  grid-area: info;
+}
+.together {
+  grid-area: to;
+}
+.together p {
+  position: relative;
+  display: inline-block;
+  background: #ffe16a;
+  width: 244px;
+  height: 168px;
+  overflow: hidden;
+}
+.together img {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 184px;
+  height: auto;
+}
+/*info*/
+
+.menu .moreBtn a {
+  border: 3px solid #ff3b30;
+  transition: all 0.3s;
+}
+.menu .moreBtn a:hover {
+  background: #ff3b30;
+  color: #fff1e6;
+}
+
+/*news,event*/
+.news {
+  padding: 140px 0;
+}
+.newsSlide {
+  font-family: "notoKR";
+  width: 100%;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 72px 0;
+}
+.newsSlide li {
+  width: 384px;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff1e6;
+}
+.newsSlide li a {
+  display: block;
+  width: 384px;
+  height: 480px;
+}
+.newsText {
+  padding: 16px;
+}
+.newsText p {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.newsText span {
+  font-size: 1.4rem;
+}
+
+.news .moreBtn a {
+  border: 3px solid #ffe16a;
+  color: #fff1e6;
+  transition: all 0.3s;
+}
+.news .moreBtn a:hover {
+  background: #ffe16a;
+  color: #ff3b30;
+}
+/*stroe, 매장찾기, 창업안내*/
+
+.store > div {
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.store h3 {
+  font-size: 6.4rem;
+}
+.store p {
+  font-size: 4rem;
+}
+.findS,
+.fran {
+  position: relative;
+  width: 588px;
+  height: 560px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 28px;
+  transition: top 1s;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.findS:hover .storeSub,
+.fran:hover .storeSub {
+  top: 10%;
+}
+
+.storeSub {
+  position: absolute;
+  top: 70%;
+  left: 20px;
+  width: 100%;
+  transition: top 0.5s ease;
+}
+.findS {
+  background: url(../image/find.png);
+}
+.fran {
+  background: url(../image/fran.png);
+}
+
+.bigBtn {
+  display: block;
+  width: 100%;
+  max-width: 53.2rem;
+  height: 16.8rem;
+  margin-top: 40px;
+  background: #1d1d1f;
+  color: #fff1e6;
+  font-size: 6.4rem;
+  border: 4px solid #fff1e6;
+  border-radius: 30px;
+  line-height: 12.8rem;
+  padding: 24px;
+  text-align: right;
+}
+
+footer {
+  background: #ffedab;
+}
+.bgY {
+  background: #ffe16a;
+}
+.fMenu {
+  align-items: center;
+  height: 48px;
+  gap: 48px;
+}
+.fMenu li:first-child {
+  color: #ff3b30;
+}
+address {
+  font-family: "notoKR";
+  padding-left: 1rem;
+}
+
+address span {
+  padding-right: 16px;
+}
+.footB {
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+.fLogo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.call {
+  position: relative;
+}
+.call::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -20px;
+  width: 1px;
+  height: 80px;
+  background: #ff3b30;
+}
+.call p {
+  padding-bottom: 24px;
+}
+.call strong {
+  font-size: 36px;
+  padding-left: 16px;
+}

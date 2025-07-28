@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>죠스떡볶이-죠스가 죠습니다</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap flex header">
+        <h1 class="logo">
+          <a href=""><img src="image/logo_c.png" alt="죠스떡볶이" /></a>
+        </h1>
+        <nav>
+          <h2 class="blind">주메뉴</h2>
+          <ul class="flex gnb">
+            <li><a href="source/brand.html">죠스떡볶이</a></li>
+            <li>
+              <a href="">메뉴안내</a>
+              <ul class="submenu">
+                0
+                <li><a href="">메인메뉴</a></li>
+                <li><a href="">세트메뉴</a></li>
+                <li><a href="">사이드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">소식</a>
+              <ul class="submenu">
+                <li><a href="">죠스뉴스</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </li>
+            <li><a href="">죠스몰</a></li>
+            <li>
+              <a href="">고객센터</a>
+              <ul class="submenu">
+                <li><a href="">고객센터</a></li>
+                <li><a href="">매장찾기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main_visual">
+        <img
+          src="image/banner1.png"
+          alt="죠스떡볶이로 마음을 전하세요. 죠스떡볶이 모바일 상품권"
+        />
+      </div>
+      <section class="menu">
+        <h2 class="title">메뉴안내</h2>
+        <div class="wrap">
+          <ul class="menuOpction flex">
+            <li class="mainM"><span>메인메뉴</span></li>
+            <li class="setM"><span>세트메뉴</span></li>
+            <li class="sideM"><span>사이드</span></li>
+          </ul>
+          <div id="menuSlide">
+            <ul class="main_menu flex content on">
+              <li>
+                <img
+                  src="image/jaws.png"
+                  alt="죠스떡볶이 이미지"
+                  class="menuItem active"
+                  data-name="죠스떡볶이"
+                  data-sub="즐겁게 매운 맛, 배려 깊은 3.5cm의 떡"
+                  data-desc1="특유의 소스 맛을 가장 잘 느낄 수 있는 떡을 끊임없이
+                연구했습니다."
+                  data-desc2="신선함을 위해 당일생산, 직배송을 원칙으로 합니다."
+                  data-img="image/jaws.png"
+                  data-side1="image/fishcake.png"
+                  data-side2="image/fri.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/sup.png"
+                  alt="국물떡볶이 이미지"
+                  class="menuItem"
+                  data-name="국물떡볶이(순한맛/매운맛)"
+                  data-sub="순한 맛과 매운 맛, 두가지 맛으로 누구나 즐길 수 있어요."
+                  data-desc1="더 맛있는 국물과 탱글한 밀떡,"
+                  data-desc2="쫄깃한 당면과 바삭한 납작만두의 조화가 만족도를 높여줍니다."
+                  data-img="image/sup.png"
+                  data-side1="image/side_menu_3.png"
+                  data-side2="image/fri.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/che.png"
+                  alt="치즈떡볶이 이미지"
+                  class="menuItem"
+                  data-name="치즈떡볶이"
+                  data-sub="떡볶이의 매운맛과 세 가지 치즈가 조화를 이룹니다."
+                  data-desc1="모짜렐라, 체다, 고다 치즈의 부드럽고 쫄깃한 맛의 환상의 조합과"
+                  data-desc2="죠스떡볶이의 매운 맛의 강도를 조절했습니다."
+                  data-img="image/che.png"
+                  data-side1="image/fishcake.png"
+                  data-side2="image/fri.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/cream.png"
+                  alt="버섯크림떡볶이 이미지"
+                  class="menuItem"
+                  data-name="버섯크림떡볶이"
+                  data-sub="표고버섯향이 살아있는 고품격 크림 떡볶이"
+                  data-desc1="진짜 표고버섯을 넣어 풍미와 식감이 일품이며, "
+                  data-desc2="즉석에서 뿌려먹는 트러플 오일로 취향껏 추가할 수 있습니다."
+                  data-img="image/cream.png"
+                  data-side1="image/side_menu_3.png"
+                  data-side2="image/img_menu_side1_230404.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/japa.png"
+                  alt="짜빠떡볶이 이미지"
+                  class="menuItem"
+                  data-name="짜빠떡볶이"
+                  data-sub="깊은 풍미의 짜장소스와 고소한 계란튀김의 만남!"
+                  data-desc1="색다른 떡볶이를 찾는분들께 추천합니다."
+                  data-desc2="고소한 풍미가 가득해서 어른 아이 구분없이 맛있게 먹을 수 있어요."
+                  data-img="image/japa.png"
+                  data-side1="image/side_menu3.png"
+                  data-side2="image/fri.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/rose.png"
+                  alt="로제크림떡볶이"
+                  class="menuItem"
+                  data-name="로제크림떡볶이"
+                  data-sub="매운 죠스떡볶이에 부드러운 크림소스가 듬뿍!"
+                  data-desc1="부드러운 크림소스가 들어가 담백하고 고소한맛!"
+                  data-desc2="죠스떡볶이의 매웃맛에 담백한 크림소스가 만나 매운데, 안매워요."
+                  data-img="image/rose.png"
+                  data-side1="image/side5.png"
+                  data-side2="image/fri.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/fishcake.png"
+                  alt="수제어묵 이미지"
+                  class="menuItem"
+                  data-name="수제어묵"
+                  data-sub="어묵의 깊은 바다 향과 기분 좋은 식감"
+                  data-desc1="어육함량이 높고, 쫄깃하면서 감칠맛 나는 부산어묵과 11가지 재료와 "
+                  data-desc2="신안천일염을 넣어 정성스럽게 우려낸 육수를 만나 맛이 깊고 개운합니다."
+                  data-img="image/fishcake.png"
+                  data-side1="image/jaws.png"
+                  data-side2="image/sundea.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/fri.png"
+                  alt="수제튀김 이미지"
+                  class="menuItem"
+                  data-name="수제튀김"
+                  data-sub="따라올 수 없는 튀김의 바삭함"
+                  data-desc1="13가지 비밀 레시피로 만든 죠스튀김가루, 죠스만의 전용유 사용으로"
+                  data-desc2="다른 튀김과는 비교할 수 없는 고소함과 바삭함을 선사합니다."
+                  data-img="image/fri.png"
+                  data-side1="image/jaws.png"
+                  data-side2="image/sup.png"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/sundea.png "
+                  alt="찰순대 이미지"
+                  class="menuItem"
+                  data-name="죠스찰순대"
+                  data-sub="후끈한 시루 속 감칠맛 나는 쫀득함"
+                  data-desc1="위생적으로 가공한 신선한 속재료에 생야채와 견과류, 쌀떡을 더해"
+                  data-desc2="씹는 맛은 물론 건강까지 더한 진짜 찰순대입니다."
+                  data-img="image/sundea.png"
+                  data-side1="image/jaws.png"
+                  data-side2="image/fishcake.png"
+                />
+              </li>
+            </ul>
+            <ul class="set_menu flex content">
+              <li><img src="image/set1.png" alt="반반떡볶이" /></li>
+              <li><img src="image/set2.png" alt="" /></li>
+              <li><img src="image/set3.png " alt="" /></li>
+            </ul>
+            <ul class="side_menu flex content">
+              <li><img src="image/img_menu_side1_230404.png" alt="" /></li>
+              <li><img src="image/side_menu_4.png" alt="" /></li>
+              <li><img src="image/side_menu_3.png" alt="" /></li>
+              <li><img src="image/side_menu_2.png" alt="" /></li>
+              <li><img src="image/side_menu3.png" alt="" /></li>
+            </ul>
+            <button type="button" class="prev">
+              <img src="image/pork_left.png" alt="이전" />
+            </button>
+            <button type="button" class="next">
+              <img src="image/pork_right.png" alt="다음" />
+            </button>
+          </div>
+
+          <section class="infoBox">
+            <!--메뉴설명박스-->
+            <img src="image/jaws.png" alt="죠스떡볶이" class="menuImg" />
+
+            <div class="info">
+              <h3 class="Name str">죠스떡볶이</h3>
+              <p class="str sub">즐겁게 매운 맛, 배려 깊은 3.5cm의 떡</p>
+              <p class="desc1">
+                특유의 소스 맛을 가장 잘 느낄 수 있는 떡을 끊임없이
+                연구했습니다.
+              </p>
+              <p class="desc2">
+                신선함을 위해 당일생산, 직배송을 원칙으로 합니다.
+              </p>
+            </div>
+            <div class="together str">
+              <h3>함께하면 더 맛있어요</h3>
+              <p class="mr12">
+                <img src="image/fishcake.png" alt="수제어묵" class="side1" />
+              </p>
+              <p><img src="image/fri.png" alt="수제튀김" class="side2" /></p>
+            </div>
+          </section>
+          <p class="moreBtn"><a href="">MORE</a></p>
+        </div>
+      </section>
+      <section class="news">
+        <h2 class="title">소식 / 이벤트</h2>
+        <div class="wrap">
+          <ul class="newsSlide flex">
+            <!--384*480-->
+            <li>
+              <a href=""
+                ><img src="image/event.png" alt="" />
+                <div class="newsText">
+                  <p>인스타 리뷰 쿠폰 이벤트</p>
+                  <span>기한 : 2025.06.18 ~ 21</span>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="image/event.png" alt="" />
+                <div class="newsText">
+                  <p>죠스어묵티 출시</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="image/event.png" alt="" />
+                <div class="newsText">
+                  <p>죠스떡볶이 모바일상품권 할인</p>
+                  <span>기한 : 2025.06.18 ~ 21</span>
+                </div></a
+              >
+            </li>
+          </ul>
+          <p class="moreBtn"><a href="">MORE</a></p>
+        </div>
+      </section>
+      <section class="store">
+        <h2 class="title">매장찾기 / 창업안내</h2>
+        <div class="wrap flex">
+          <section class="findS">
+            <div class="storeSub">
+              <h3>매장찾기</h3>
+              <p>FINDING STORE</p>
+              <a href="" class="bigBtn">MORE</a>
+            </div>
+          </section>
+          <section class="fran">
+            <div class="storeSub">
+              <h3>창업안내</h3>
+              <p>FRANCHISE</p>
+              <p><a href="" class="bigBtn">MORE</a></p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="bgY">
+        <ul class="fMenu flex wrap">
+          <li>
+            <a href=""><strong>개인정보처리방침</strong></a>
+          </li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">위치기반서비스</a></li>
+          <li><a href="">이메일무단수집거부</a></li>
+        </ul>
+      </div>
+      <div class="wrap flex footB">
+        <div>
+          <p class="fLogo"><img src="image/logo_c.png" alt="" /></p>
+          <address>
+            <p>
+              <span>대표이사 나상균</span
+              ><span>사업자등록번호 209-81-54096</span
+              ><span>서울특별시 언주로 147길 20</span>
+            </p>
+            <p>COPYRIGHT &copy; JAWSFOOD ALL RIGHTS RESERVED.</p>
+          </address>
+        </div>
+        <div class="call">
+          <p>창업문의<strong>1688-2868</strong></p>
+          <p>대표전화<strong>1600-7984</strong></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
